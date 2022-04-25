@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Orden de trabajo</title>
+    
+</head>
+<body>
+
+  <h2>Orden de Trabajo</h2>
+    <form action="#" method="post" class="form-register">
+
+          <h2 class="form__titulo"> DATOS DEL CLIENTE</h2>
+              <div class="contenedor-inputs"></div>
+  
+
+<!--Validacion de Rut-->
+
+              <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+              <button type="submit">Validar Rut</button>
+
+<!--!como paso esto al js?-->
+        <script src="validarRUT.js"></script> 
+
+
+            <input type="text" name="Nombre" placeholder="Nombre" class="input-48"required>
+            <input type="text" name="Apellido" placeholder="Apellido" class="input-48" required>
+            <input type="email" name="Correo" placeholder="Correo" class="input-48">
+            <input type="number" name="Telefono" placeholder="Telefono" class="input-48">
+            <input type="text" name="Direccion" placeholder="Dirección" class="input-48" required>
+            <input type="text" name="N°" placeholder="N°-Casa-Departamento" class="input-48" required>
+
+<!--Codigo para ciudades y regiones-->
+
+     <select id="regiones"class="input-48"></select> <select id="comunas" class="input-48"></select>
+        
+            <p>Fecha de Recepción<input type="date" placeholder="Fecha" aria-label="Fecha"></p>  
+            <p>Hora de Recepción <input type="time" placeholder="Hora" aria-label="Hora" ></p>
+
+        <h2 class="form__titulo"> DATOS DEL VEHICULO</h2>
+
+            <input type="text" name="Marca" placeholder="Marca" class="input-48" required>
+            <input type="text" name="Modelo" placeholder="Modelo" class="input-48" required>
+            <input type="number" name="Año" placeholder="Año" class="input-48" required>
+
+        <h2 class="form__titulo">REVISION TECNICA AL DIA</h2>
+            <p><input type="radio" name="revtecnica" value="si">Vigente</p>
+            <p><input type="radio" name="revtecnica" value="no">No Vigente</p>
+
+
+        <h2 class="form__titulo">SERVICIOS CONTRATADOS</h2>
+            
+        <!--Codigo para Los Servicios--> 
+
+        
+            <label for="Weather"><FONT COLOR="white">Selecciona el Tipo de Servicio: </FONT></label>
+            <select id="Weather">
+            <option value="">--Servicio--</option>
+            <option value="completo">Lavado Exterior e Interior</option>
+            <option value="motor">Lavado de Motor</option>
+
+          </select>
+          <p></p>
+         <br>
+         <br>
+         <br>
+
+
+            <p>Fecha de Entrega<input type="date" placeholder="Fecha" aria-label="Fecha"></p>  
+            <p>Hora de Entrega <input type="time" placeholder="Hora" aria-label="Hora" ></p>
+            <p> Comentarios <input type= ""> </input></p> 
+
+
+            <button style="margin: 1px" type="submit " class="send-btn">Enviar</button>
+            <button style="margin: 1px" type="submit" class="send-btn">Modificar</button>
+            <button style="margin: 1px" type="submit" class="send-btn">Cancelar</button> 
+
+</div>
+
+
+
+</form>
+
+
+
+<!--CDN jquery-->  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src ="formulario.js"></script>
+
+
+</body>
+</html>
+

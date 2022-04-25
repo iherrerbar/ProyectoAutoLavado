@@ -1,0 +1,8 @@
+
+----------------------Index.html------------------------
+
+http://127.0.0.1:5500/ProyectoAutoLavado/index.html
+
+---------------------Formulario.html--------------------
+
+http://127.0.0.1:5500/ProyectoAutoLavado/formulario.html

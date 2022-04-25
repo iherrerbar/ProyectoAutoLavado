@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    margin:0;
+    font-family: sans-serif;
+    background-image: url("img_lavado/rollo.png");
+    
+}
+
+h2{
+
+    color: rgb(14, 14, 13);
+    font-size: 16px bold;
+    text-align: center;
+
+}
+
+.form-register {
+
+    width: 95%;
+    max-width: 500px;
+    margin:auto;
+    background: rgb(39, 37, 37);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: rgb(228, 125, 8);
+  
+}
+
+.form__titulo{
+
+    background: rgb(10, 10, 10);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size:15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+    
+}
+
+.contenedor-imputs{
+
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.input{
+
+    margin-bottom: 10px;
+    padding:15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+
+.input-48{
+
+    width:48%;
+
+}
+
+.input-100{
+
+    width: 96%;
+}
+
+::placeholder{
+
+    color:rgb(243, 12, 12);
+}
+
+
+p{
+
+    color: orangered;
+    font-size: 17px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+#Weather{
+
+    background:rgb(102, 91, 250);
+    color: rgb(252, 246, 246);
+    font-size: 15px;
+}
+
+
+
+select{
+
+    text-align: center;
+    background:rgb(46, 42, 100);
+    color: white;
+
+}   
+
+
+option {
+ 
+    background:rgb(5, 170, 5);
+
+}
+
+
+button {
+
+    background: coral;
+    color: white;
+    margin: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.send-btn{
+
+    transform: scale(0.5);
+    align: center;
+   
+
+}
