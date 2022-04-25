@@ -24,7 +24,7 @@ h2{
     width: 95%;
     max-width: 500px;
     margin:auto;
-    background: rgb(39, 37, 37);
+    background: rgb(241, 235, 235);
     border-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -128,7 +128,6 @@ button {
 .send-btn{
 
     transform: scale(0.5);
-    align: center;
+}
    
 
-}
